@@ -53,13 +53,11 @@ def make_predictions(model, scaler, training_data_len, data):
 
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
-    if request.method == 'POST':
-        data = request.get_json()
-        stock_symbol = data.get('stock_symbol', 'AAPL')
-        # Your prediction logic here
-        return jsonify({"message": f"Prediction for {stock_symbol}"})
-    else:
-        return jsonify({"message": "Use POST method with a stock symbol to get predictions."})
+    # Your prediction logic here
+    stock_symbol = request.args.get('symbol')
+    # Process the stock symbol and return prediction
+    result = {'price': 100.5, 'confidence': 0.8}  # Example response
+    return jsonify(result)
 
 
 if __name__ == '__main__':
