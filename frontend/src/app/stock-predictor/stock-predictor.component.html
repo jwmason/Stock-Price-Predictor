@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>Stock Price Predictor</h2>
+  <form (submit)="onSubmit()">
+    <input
+      type="text"
+      [(ngModel)]="stockSymbol"
+      name="symbol"
+      placeholder="Enter Stock Symbol"
+      required
+    />
+    <button type="submit" [disabled]="loading">Predict</button>
+  </form>
+
+  <div *ngIf="loading">
+    Loading...
+  </div>
+
+  <div *ngIf="prediction">
+    <h3>Prediction Result</h3>
+    <p>Symbol: {{ stockSymbol }}</p>
+    <p>Predicted Price: {{ prediction.price }}</p>
+    <p>Confidence: {{ prediction.confidence }}</p>
+  </div>
+
+  <div *ngIf="error">
+    <p class="error">{{ error }}</p>
+  </div>
+</div>
