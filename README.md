@@ -41,7 +41,7 @@ Ensure you have the following installed:
     ```bash
     python app.py
     ```
-The backend will be running on (http://127.0.0.1:5000)[http://127.0.0.1:5000]
+The backend will be running on [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 ### Frontend Setup
 
@@ -62,4 +62,4 @@ The backend will be running on (http://127.0.0.1:5000)[http://127.0.0.1:5000]
     ```bash
     ng serve
     ```
-The frontend will be running on (http://localhost:4200/)[http://localhost:4200/]
+The frontend will be running on ]http://localhost:4200/](http://localhost:4200/)
