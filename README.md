@@ -1,52 +1,65 @@
 # Stock Price Prediction
 
-This project provides a stock price prediction tool using a Long Short-Term Memory (LSTM) model. The backend is built with Flask and TensorFlow, while the frontend is developed using Angular. The project predicts future stock prices based on historical data.
+This project is a stock price prediction tool that uses a Long Short-Term Memory (LSTM) model. The backend is built with Flask and TensorFlow, while the frontend is developed using Angular. The tool predicts future stock prices based on historical data.
 
 ## Features
 
-- Fetch historical stock data.
-- Train an LSTM model to predict stock prices.
-- Display predictions and accuracy on a web frontend.
-- Built using Flask for the backend and Angular for the frontend.
+- Fetch historical stock data from external APIs.
+- Train an LSTM model for stock price prediction.
+- Display predictions and model accuracy on a user-friendly web interface.
+
+## Tech Stack
+- Backend developed using Flask, Tensorflow, and Python.
+- Frontend created with Angular and Typescript.
 
 ## Getting Started
 
 ### Prerequisites
 
+Ensure you have the following installed:
+
 - Python 3.x
 - Node.js and npm
 - Angular CLI
 
-### Setup Instructions
+### Backend Setup
 
-#### 1. Clone the Repository
+1. **Clone the repository**:
 
-```bash
-git clone <repository-url>
-cd stock-price-predictor
+    ```bash
+    git clone https://github.com/jwmason/Stock-Price-Predictor.git
+    ```
 
-#### 2. Backend Setup
+2. **Navigate to the backend**:
 
-cd backend
-pip install -r requirements.txt
-python app.py
+    ```bash
+    cd backend
+    ```
 
-#### 3. Frontend Setup
+3. **Run The App**:
 
-cd frontend
-npm install
-ng serve
+    ```bash
+    python app.py
+    ```
+The backend will be running on (http://127.0.0.1:5000)[http://127.0.0.1:5000]
 
-### Project Structure
+### Frontend Setup
 
-stock-price-predictor/
-├── backend/
-│   ├── app.py
-│   ├── requirements.txt
-│   └── (other backend files)
-└── frontend/
-    ├── src/
-    ├── angular.json
-    ├── package.json
-    └── (other frontend files)
+1. **Navigate to the frontend**:
 
+    ```bash
+    cd frontend
+    ```
+
+2. **Install dependencies**:
+
+    ```bash
+    npm install
+    ```
+
+3. **Run The App**:
+
+    ```bash
+    ng serve
+    ```
+The frontend will be running on (http://localhost:4200/)[http://localhost:4200/]
